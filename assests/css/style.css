@@ -10,8 +10,7 @@ section {
 nav {
     background-color: #f2f2f2;
     padding: 10px;
-    text-align: center;
-    /* Center align the navbar */
+    text-align: center;    
 }
 
 nav ul {
@@ -19,7 +18,6 @@ nav ul {
     margin: 0;
     padding: 0;
     display: inline-block;
-    /* Display the list items in a line */
 }
 
 nav ul li {
