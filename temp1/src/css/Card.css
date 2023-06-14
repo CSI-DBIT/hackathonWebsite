@@ -196,30 +196,54 @@ h1 {
 
 .f0 {
     /* background-image: url(https://unsplash.it/500/500/); */
-    background-image: url(https://source.unsplash.com/500x500/?library);
+    /* background-image: url(https://source.unsplash.com/500x500/?library); */
+    background: rgba(26, 63, 18, 0.7);
+    background: -webkit-linear-gradient(45deg, #000 0%, rgba(26, 63, 18, 1) 100%);
+    background: -o-linear-gradient(45deg, #000 0%, rgba(26, 63, 18, 1) 100%);
+    background: linear-gradient(45deg, #000 0%, rgba(26, 63, 18, 1) 100%);
 }
 
 .f1 {
     /* background-image: url(https://unsplash.it/511/511/); */
-    background-image: url(https://source.unsplash.com/500x500/?finanace);
+    /* background-image: url(https://source.unsplash.com/500x500/?finanace); */
+    background: rgba(26, 63, 18, 0.7);
+    background: -webkit-linear-gradient(45deg, #000 0%, rgba(26, 63, 18, 1) 100%);
+    background: -o-linear-gradient(45deg, #000 0%, rgba(26, 63, 18, 1) 100%);
+    background: linear-gradient(45deg, #000 0%, rgba(26, 63, 18, 1) 100%);
 }
 
 .f2 {
     /* background-image: url(https://unsplash.it/502/502/); */
-    background-image: url(https://source.unsplash.com/500x500/?renewable);
+    /* background-image: url(https://source.unsplash.com/500x500/?renewable); */
+    background: rgba(26, 63, 18, 0.7);
+    background: -webkit-linear-gradient(45deg, #000 0%, rgba(26, 63, 18, 1) 100%);
+    background: -o-linear-gradient(45deg, #000 0%, rgba(26, 63, 18, 1) 100%);
+    background: linear-gradient(45deg, #000 0%, rgba(26, 63, 18, 1) 100%);
 }
 
 .f3 {
     /* background-image: url(https://unsplash.it/503/503/); */
-    background-image: url(https://source.unsplash.com/500x500/?tourism);
+    /* background-image: url(https://source.unsplash.com/500x500/?tourism); */
+    background: rgba(26, 63, 18, 0.7);
+    background: -webkit-linear-gradient(45deg, #000 0%, rgba(26, 63, 18, 1) 100%);
+    background: -o-linear-gradient(45deg, #000 0%, rgba(26, 63, 18, 1) 100%);
+    background: linear-gradient(45deg, #000 0%, rgba(26, 63, 18, 1) 100%);
 }
 
 .f4 {
     /* background-image: url(https://unsplash.it/504/504/); */
-    background-image: url(https://source.unsplash.com/500x500/?food);
+    /* background-image: url(https://source.unsplash.com/500x500/?food); */
+    background: rgba(26, 63, 18, 0.7);
+    background: -webkit-linear-gradient(45deg, #000 0%, rgba(26, 63, 18, 1) 100%);
+    background: -o-linear-gradient(45deg, #000 0%, rgba(26, 63, 18, 1) 100%);
+    background: linear-gradient(45deg, #000 0%, rgba(26, 63, 18, 1) 100%);
 }
 
 .f5 {
     /* background-image: url(https://unsplash.it/505/505/); */
-    background-image: url(https://source.unsplash.com/500x500/?device);
+    /* background-image: url(https://source.unsplash.com/500x500/?device); */
+    background: rgba(26, 63, 18, 0.7);
+    background: -webkit-linear-gradient(45deg, #000 0%, rgba(26, 63, 18, 1) 100%);
+    background: -o-linear-gradient(45deg, #000 0%, rgba(26, 63, 18, 1) 100%);
+    background: linear-gradient(45deg, #000 0%, rgba(26, 63, 18, 1) 100%);
 }
