@@ -1,9 +1,10 @@
-import Cards from "./components/cards";
+import Card from "./components/card";
 
 function App() {
   return (
     <>
-      <Cards></Cards>
+      {/* updated card */}
+      <Card></Card> 
     </>
   );
 }
