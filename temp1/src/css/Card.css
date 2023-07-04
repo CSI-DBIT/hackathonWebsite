@@ -14,9 +14,9 @@ body {
 	--card-icon-background-color: rgba(255, 255, 255, 0.08);
 	--card-icon-border-color: rgba(255, 255, 255, 0.12);
 	--card-shine-opacity: .1;
-	--card-shine-gradient: conic-gradient(from 205deg at 50% 50%, rgba(16, 185, 129, 0) 0deg, #10B981 25deg, rgba(52, 211, 153, 0.18) 295deg, rgba(16, 185, 129, 0) 360deg);
+	--card-shine-gradient: conic-gradient(from 205deg at 50% 50%, rgba(192, 66, 153, 0) 0deg, rgb(192, 66, 153) 25deg, rgba(190, 52, 211, 0.18) 295deg, rgba(134, 16, 185, 0) 360deg);
 	--card-line-color: #2A2B2C;
-	--card-tile-color: rgba(16, 185, 129, 0.05);
+	--card-tile-color: rgba(185, 16, 148, 0.05);
 	--card-hover-border-color: rgba(255, 255, 255, 0.2);
 	--card-hover-box-shadow-1: rgba(0, 0, 0, 0.04);
 	--card-hover-box-shadow-1-y: 5px;
@@ -24,9 +24,9 @@ body {
 	--card-hover-box-shadow-2: rgba(0, 0, 0, 0.3);
 	--card-hover-box-shadow-2-y: 15px;
 	--card-hover-box-shadow-2-blur: 25px;
-	--card-hover-icon-color: #34D399;
-	--card-hover-icon-background-color: rgba(52, 211, 153, 0.1);
-	--card-hover-icon-border-color: rgba(52, 211, 153, 0.2);
+	--card-hover-icon-color: #C04299;
+	--card-hover-icon-background-color: rgba(211, 52, 171, 0.1);
+	--card-hover-icon-border-color: rgba(211, 52, 142, 0.2);
 	--blur-opacity: .01;
 }
 
@@ -46,7 +46,7 @@ body.light {
 	--card-icon-background-color: rgba(24, 24, 27, 0.04);
 	--card-icon-border-color: rgba(24, 24, 27, 0.1);
 	--card-shine-opacity: .3;
-	--card-shine-gradient: conic-gradient(from 225deg at 50% 50%, rgba(16, 185, 129, 0) 0deg, #10B981 25deg, #EDFAF6 285deg, #FFFFFF 345deg, rgba(16, 185, 129, 0) 360deg);
+	--card-shine-gradient: conic-gradient(from 225deg at 50% 50%, rgba(16, 185, 129, 0) 0deg, #C04299 25deg, #EDFAF6 285deg, #FFFFFF 345deg, rgba(16, 185, 129, 0) 360deg);
 	--card-line-color: #E9E9E7;
 	--card-tile-color: rgba(16, 185, 129, 0.08);
 	--card-hover-border-color: rgba(24, 24, 27, 0.15);
@@ -66,11 +66,22 @@ body.toggle .grid * {
 	transition-duration: 0s !important;
 }
 
+.track_title h1 {
+	font-size: 3rem;
+	letter-spacing: 0.1rem;
+	font-weight: 700;
+	color: #efefef;
+	text-align: center;
+	text-transform: uppercase;
+	text-shadow: 0px 2.5px 0px #C04299;
+  }
 .grid {
 	display: grid;
-	grid-template-columns: repeat(2, 240px);
+	grid-template-columns: repeat(4, 240px);
 	grid-gap: 32px;
 	position: relative;
+	justify-content: center;
+	margin-top: 2rem;
 	z-index: 1;
 }
 
@@ -480,14 +491,14 @@ body {
 	justify-content: center;
 	align-items: center;
 	background-color: var(--background-color);
-	overflow: hidden;
+	/* overflow: hidden; */
 }
 
 body:before {
 	content: '';
 	position: absolute;
 	inset: 0 -60% 65% -60%;
-	background-image: radial-gradient(ellipse at top, #10B981 0%, var(--background-color) 50%);
+	background-image: radial-gradient(ellipse at top, #C04299 0%, var(--background-color) 50%);
 	opacity: var(--blur-opacity);
 }
 
@@ -502,4 +513,10 @@ body .twitter svg {
 	width: 32px;
 	height: 32px;
 	fill: #fff;
+}
+@media only screen and (max-device-width: 480px) {
+	.grid{
+	grid-template-columns: repeat(1, 240px);
+	}
+
 }

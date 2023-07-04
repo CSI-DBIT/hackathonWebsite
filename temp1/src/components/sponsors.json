@@ -1,0 +1,108 @@
+[   
+    {
+        "type": "TITLE SPONSOR",
+        "contents" : [
+            {
+                "name" : "Stone-X",
+                "image" : "https://assets-global.website-files.com/5f734f4dbd95382f4fdfa0ea/64623ff7917deda53e22c5a4_google_cloud.svg",
+                "link" : "http://www.stonex.com/"
+            },
+            {
+                "name" : "R-City",
+                "image" : "https://assets-global.website-files.com/5f734f4dbd95382f4fdfa0ea/64623ff7917deda53e22c5a4_google_cloud.svg",
+                "link" : "http://rcity.co.in/"
+            }
+        ]
+    },
+    {
+        "type": "PLATFORM SPONSOR",
+        "contents" : [
+            {
+                "name" : "Devfolio",
+                "image" : "https://assets-global.website-files.com/5f734f4dbd95382f4fdfa0ea/64623ff7917deda53e22c5a4_google_cloud.svg",
+                "link" : "https://devfolio.co/"
+            }
+        ]
+    },
+    {
+        "type": "PLATINUM SPONSORS",
+        "contents" : [
+            {
+                "name" : "Polygon",
+                "image" : "https://assets-global.website-files.com/5f734f4dbd95382f4fdfa0ea/64623ff7917deda53e22c5a4_google_cloud.svg",
+                "link" : "https://polygon.technology/"
+            },
+            {
+                "name" : "Solana",
+                "image" : "https://assets-global.website-files.com/5f734f4dbd95382f4fdfa0ea/64623ff7917deda53e22c5a4_google_cloud.svg",
+                "link" : "https://solana.com/"
+            },
+            {
+                "name" : "Filecoin",
+                "image" : "https://assets-global.website-files.com/5f734f4dbd95382f4fdfa0ea/64623ff7917deda53e22c5a4_google_cloud.svg",
+                "link" : "https://filecoin.io/"
+            },
+            {
+                "name" : "Replit",
+                "image" : "https://assets-global.website-files.com/5f734f4dbd95382f4fdfa0ea/64623ff7917deda53e22c5a4_google_cloud.svg",
+                "link" : "https://replit.com/"
+            }
+        ]
+    }
+    ,
+    {
+        "type" : "GOLD SPONSORS",
+        "contents" : [
+            {
+                "name" : "Earth_Hacks",
+                "image" : "/images/earthhacks.png",
+                "link" : "https://earthhacks.io/"
+            },
+            {
+                "name" : "Wolfram",
+                "image" : "/images/wolfram.png",
+                "link" : "https://www.wolfram.com/"
+            },
+            {
+                "name" : ".XYZ",
+                "image" : "/images/xyz.png",
+                "link" : "https://gen.xyz/"
+            },
+            {
+                "name"  : "Interview Cake",
+                "image" : "/images/interview-cake.png",
+                "link"  : "https://www.interviewcake.com/"
+            },
+            {
+                "name"  : "Qoom",
+                "image" : "/images/qoom.png",
+                "link"  : "https://www.interviewcake.com/"
+            },
+            {
+                "name"  : "Verbwire",
+                "image" : "/images/verbwire.png",
+                "link"  : "https://www.verbwire.com/"
+            }
+        ]
+    },
+    {
+        "type" : "FOOD SPONSOR",
+        "contents" : [
+            {
+                "name" : "ButterNut",
+                "image" : "/images/butternut.png",
+                "link" : "https://www.thebutternutcompany.com/"
+            }
+        ]
+    },
+    {
+        "type" : "STICKER SPONSOR",
+        "contents" : [
+            {
+                "name" : "Stickersshub",
+                "image" : "/images/Stickersshub.png",
+                "link" : "https://www.instagram.com/stickersshub"
+            }
+        ]
+    }
+]
