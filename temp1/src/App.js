@@ -1,4 +1,4 @@
-import Accordion from "./Accordian";
+import Accordion from "./components/Accordian";
 import Card from "./components/card";
 import Sponsors from "./components/Sponsors";
 

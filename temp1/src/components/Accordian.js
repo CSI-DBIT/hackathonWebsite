@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import "C:/Users/amitg/OneDrive/Documents/GitHub/hackathonWebsite/temp1/src/Accordian.css";
+import "../css/Accordian.css";
 
 const Accordion = ({ title, content }) => {
   const [isExpanded, setExpanded] = useState(false);
