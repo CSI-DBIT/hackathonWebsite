@@ -1,0 +1,169 @@
+$bg-color: #1C1C1E;
+$clock-bg: #1C1C1E;
+$clock-radius: 30vh;
+$clock-mark-color: #fff;
+$clock-start-bg: #4fe3c1;
+$clock-stop-bg: #ff415a;
+$clock-button-bg: #ebebeb;
+$clock-button-color: #5e5e5e;
+
+// Main style
+.clock-wrapper {
+  display: block;
+  margin: 0 auto;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  text-align: center;
+}
+
+.clock {
+  position: relative;
+  display: block;
+  margin: 0 auto 30px;
+  min-width: 600px;
+  min-height: 600px;
+  max-width: 90vw;
+  max-height: 90vw;
+  width: $clock-radius * 2;
+  height: $clock-radius * 2;
+  border-radius: 50%;
+}
+
+.clock__inner-bg {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 92%;
+  height: 92%;
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.clock__inner-bg:nth-of-type(2) {
+  width: 85%;
+  height: 85%;
+}
+.clock__markers {
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  transition: transform 1s;
+
+  &:hover {
+    animation: anticlockwiserotate 5s infinite;
+    animation-fill-mode: forwards;
+  }
+  @keyframes anticlockwiserotate {
+    0% {
+      transform: rotate(360deg);
+    }
+    100% {
+      transform: rotate(0deg);
+    }
+  }
+}
+
+.clock__mark {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: 5px;
+  height: 50%;
+  transform-origin: 50% bottom;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 25px;
+    left: 50%;
+    color: $clock-mark-color;
+    font-size: 22px;
+    transform: translateX(-50%);
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 4px;
+    left: 50%;
+    width: 3px;
+    height: 35px;
+    background: linear-gradient(
+      90deg,
+      rgba(147, 100, 221, 1) 48%,
+      rgba(192, 66, 153, 1) 100%
+    );
+    transform: translateY(-70%);
+    border-radius: 10px;
+  }
+
+  &:nth-child(5n + 1)::after {
+    width: 7px;
+    height: 45px;
+  }
+}
+
+$angle: 360/60;
+@for $i from 1 through 60 {
+  .clock__mark:nth-child(#{$i}) {
+    transform: translateX(-50%) rotate(#{($angle * ($i - 1))}deg);
+  }
+
+  // rotate in reverse the minutes to be always readable
+  .clock__mark:nth-child(#{$i})::before {
+    transform: translate(-50%, -50%) rotate(-#{($angle * ($i - 1))}deg);
+  }
+}
+
+.clock__inner-center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+}
+//andar vaala dial
+.clock__inner-center {
+  width: 250px;
+  height: 250px;
+  .clock__markers {
+    opacity: 0.5;
+    transition: transform 1s;
+    &:hover {
+      animation: clockwiserotate 5s infinite;
+      animation-fill-mode: forwards;
+    }
+
+    @keyframes clockwiserotate {
+      0% {
+        transform: rotate(0deg);
+      }
+      100% {
+        transform: rotate(360deg);
+      }
+    }
+
+    .clock__mark {
+      &::after {
+        width: 2px;
+        height: 15px;
+        border-radius: 5px;
+        background: linear-gradient(
+          274deg,
+          rgba(147, 100, 221, 1) 0%,
+          rgba(192, 66, 153, 1) 58%
+        );
+      }
+
+      &:nth-child(5n + 1)::after {
+        width: 5px;
+        height: 20px;
+      }
+    }
+  }
+}
